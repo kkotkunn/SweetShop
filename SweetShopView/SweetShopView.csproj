@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F8FC7F1-C224-4067-8A05-3B1FB8BD0154}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SweetShopView</RootNamespace>
+    <AssemblyName>SweetShopView</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.0\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.10.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.10.0\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngredient.Designer.cs">
+      <DependentUpon>FormIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIngredients.Designer.cs">
+      <DependentUpon>FormIngredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSMain.Designer.cs">
+      <DependentUpon>FormSMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSweet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSweet.Designer.cs">
+      <DependentUpon>FormSweet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSweetIngredient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSweetIngredient.Designer.cs">
+      <DependentUpon>FormSweetIngredient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSweets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSweets.Designer.cs">
+      <DependentUpon>FormSweets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FormSClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSClient.Designer.cs">
+      <DependentUpon>FormSClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSClients.Designer.cs">
+      <DependentUpon>FormSClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSCreateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSCreateOrder.Designer.cs">
+      <DependentUpon>FormSCreateOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormIngredient.resx">
+      <DependentUpon>FormIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIngredients.resx">
+      <DependentUpon>FormIngredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSMain.resx">
+      <DependentUpon>FormSMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSweet.resx">
+      <DependentUpon>FormSweet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSweetIngredient.resx">
+      <DependentUpon>FormSweetIngredient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSweets.resx">
+      <DependentUpon>FormSweets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormSClient.resx">
+      <DependentUpon>FormSClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSClients.resx">
+      <DependentUpon>FormSClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSCreateOrder.resx">
+      <DependentUpon>FormSCreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\SweetShopServiceDAL.SBindingModel.IngredientBindingModel.datasource" />
+    <None Include="Properties\DataSources\SweetShopServiceDAL.SBindingModel.SClientBindingModel.datasource" />
+    <None Include="Properties\DataSources\SweetShopServiceDAL.SBindingModel.SweetBindingModel.datasource" />
+    <None Include="Properties\DataSources\SweetShopServiceDAL.SBindingModel.SweetIngredientBindingModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SweetShopModel\SweetShopModel.csproj">
+      <Project>{8af321ce-a7f6-4cf3-9b4b-0e0fb5452db5}</Project>
+      <Name>SweetShopModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SweetShopServiceDAL\SweetShopServiceDAL.csproj">
+      <Project>{da2dae29-467d-4aef-8d76-f2d6703dbb95}</Project>
+      <Name>SweetShopServiceDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SweetShopServiceImplementList\SweetShopServiceImplementList.csproj">
+      <Project>{ad1b290d-ee3f-4be7-a171-f00543453b0b}</Project>
+      <Name>SweetShopServiceImplementList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
